@@ -6,8 +6,7 @@ const nodemon = require('gulp-nodemon')
 const sass = require('gulp-ruby-sass')
 
 const config = {
-  css: './public/css/',
-  sass: './public/css/**/*.scss'
+  css: './public/css/'
 }
 
 gulp.task('default', [
@@ -21,7 +20,7 @@ gulp.task('clean-styles', () => {
   del(files)
 })
 
-gulp.task('develop', () => {
+gulp.task('develop', function() {
   livereload.listen()
 
   nodemon({
@@ -42,13 +41,14 @@ gulp.task('develop', () => {
 gulp.task('styles', ['clean-styles'], () => {
   console.log('compiling sass -> css')
 
-  return sass(config.sass)
+  return sass(config.css + '**/*.scss')
     .pipe(autoprefixer({ browsers: ['last 2 version', '> 5%'] }))
     .pipe(gulp.dest(config.css))
+    .pipe(livereload())
 })
 
 gulp.task('watch', () => {
-  gulp.watch(config.sass, ['styles'])
+  gulp.watch(config.css + '**/*.scss', ['styles'])
   //gulp.watch(config.js, ['scripts'])
 })
 
