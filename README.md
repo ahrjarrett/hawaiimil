@@ -10,7 +10,7 @@ Todo:
 - Refactor views into app/views, add app/models and app/controllers too
 
 Src:
-- [Shannon Smith](www.shannonsmithrealtor.com)
+- [Shannon Smith](http://www.shannonsmithrealtor.com)
 - [Reine Ah Moo](https://www.locationshawaii.com/agent/reine.ahmoo?aid=614)
 - [Cui Me Ho](https://www.locationshawaii.com/agent/cui.ho?aid=989)
 - [Caroline Miller](https://www.locationshawaii.com/agent/caroline.miller?aid=3222)
