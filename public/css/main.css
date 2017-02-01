@@ -1,6 +1,9 @@
 body {
   padding: 50px;
-  font: 14px Courier, serif; }
+  font: 14px Helvetica, sans-serif; }
 
 a {
   color: #00B7FF; }
+
+img.logo {
+  width: 200px; }
