@@ -1,0 +1,27 @@
+nav.navbar.top-navbar.sm-hide
+  .top-banner
+    .container
+      p.
+        Available 24/7 To Better Serve Troops Overseas.
+        Call #[a(href='tel:+1#{phone}')= prettify_phone]
+        or #[a(href='quote') Get a Quote]
+nav.navbar.middle-navbar
+  .middle-banner
+    .container
+      .logo-wrapper
+        img.logo(src='images/logo.svg')
+      .contact-wrapper
+        .email
+          a email
+        .phone
+          a(href='tel:+1#{phone}')= prettify_phone
+nav.navbar.bottom-navbar
+  .bottom-banner
+    .container
+      ul
+        each route, title in nav
+          li #[a(href='#{route}')= title]
+      ul.social-ul
+        each route, icon in social
+          li #[a(href='#{route}')= icon]
+

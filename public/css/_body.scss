@@ -1,10 +1,24 @@
 body {
-  padding: 50px;
-  font: 14px $sans;
+  font: 16px $sans;
 }
 
 a {
   color: $linkColor;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sm-hide {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 img.logo {
