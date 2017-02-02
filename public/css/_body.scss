@@ -4,6 +4,9 @@ body {
 
 a {
   color: $linkColor;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 li {
