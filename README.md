@@ -1,6 +1,6 @@
 # HawaiiMIL
 
-Prototype for HawaiiMIL.com, [see the demo here](https://immense-lake-39177.herokuapp.com/)
+Prototype for HawaiiMIL.com, [See the Demo Here](https://hawaiimil-sandbox.herokuapp.com/)
 
 Todo:
 - ~~Inject Bootstrap~~
